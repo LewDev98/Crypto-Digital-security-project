@@ -1,0 +1,15 @@
+{
+  "ranks": {
+    "sentry": {"name": "Sentry", "rank": "Rank I", "sol": 0.25, "guard": 500000},
+    "guardian": {"name": "Guardian", "rank": "Rank II", "sol": 0.5, "guard": 1000000},
+    "detail": {"name": "Security Detail", "rank": "Rank III", "sol": 1, "guard": 2000000}
+  },
+  "services": {
+    "wallets": {"name": "Guarded Wallets", "usdc": 299, "guard": 3000000},
+    "treasury": {"name": "Treasury Watch", "usdc": 499, "guard": 5000000},
+    "screening": {"name": "Risk Screening", "usdc": 249, "guard": 2500000},
+    "drills": {"name": "Scam Drills", "usdc": 299, "guard": 3000000},
+    "duress": {"name": "Duress Mode", "usdc": null, "guard": null},
+    "freeze": {"name": "Freeze Desk", "usdc": null, "guard": null}
+  }
+}

@@ -1,0 +1,33 @@
+# Bodyguard Agents ($GUARD)
+
+> Bodyguard Agents (guardagent.tech, also called Guard Agent) sells AI security agents for crypto holders and teams. You hire an agent with SOL plus the $GUARD token on Solana; it watches your wallets, email, passwords and domains around the clock and alerts you in seconds. It never asks for, stores or touches seed phrases or private keys.
+
+Official links: website https://guardagent.tech · help and support https://guardagent.tech/help · X (Twitter) https://x.com/GuardagentWeb3 (the only official account; Bodyguard never DMs first).
+$GUARD contract address (Solana): Hx6iP5hivj8Ezr5gENBdSioZVhkXo8KArLQc1tnGpump. Any other token calling itself $GUARD is not official.
+
+## Agent ranks (per 30 days; the $GUARD part is burnt)
+- Sentry (Rank I): 0.25 SOL + 500,000 $GUARD. 3 wallets on Solana, Ethereum and Bitcoin; 2 emails; breach radar; Telegram and email alerts; address-poisoning shield; spam sweep with rent back.
+- Guardian (Rank II): 0.5 SOL + 1,000,000 $GUARD. 15 wallets on every supported chain and L2; 5 emails and exchange logins; 3 domains with DNS and registrar watch; leak watch; push, Telegram and email alerts.
+- Security Detail (Rank III): 1 SOL + 2,000,000 $GUARD. 100 wallets including treasuries; 25 domains and impersonation watch; 5 team seats; priority escalation of critical alerts.
+
+Chains: Solana, Ethereum, Bitcoin, Base, Arbitrum, Optimism, Polygon, BNB Chain.
+
+## Services (sold separately, paid in USDC + $GUARD per 30 days)
+- Guarded Wallets: Squads smart-account wallets with spend limits, allowlists, multi-approver rules and an audit log.
+- Treasury Watch: monitoring for Squads (Solana) and Safe (EVM) multisigs, signer-compromise detection, policy alerts.
+- Risk Screening: wallet risk score 0-100 with sanctions, mixer and exploit exposure, via dashboard or API.
+- Scam Drills: simulated phishing and fake-support drills with training for teams and communities.
+- Duress Mode (price to be announced): protection against "wrench attacks" (being forced to send crypto). A second PIN opens a decoy vault with a small balance, silently alerts trusted contacts (with optional location), and holds large transfers for a cooling-off period nobody can shorten, enforced by the Bodyguard Shield browser extension and Guarded Wallets. Weakening or switching it off only takes effect 24 hours later.
+- Freeze Desk (price to be announced): for scam victims. One form; the agent reads the transactions from the blockchain, locks the evidence (SHA-256 fingerprint plus a signed timestamp, optionally anchored on Solana), sends pre-formatted freeze requests to exchanges, stablecoin issuers and responders such as SEAL 911, and keeps tracing the stolen funds.
+
+## Key features
+- Bodyguard Shield browser extension (Chrome, Brave, Edge): checks every Solana and EVM signing request, blocks drainers, unlimited approvals, Permit/Permit2 phishing, fake listings and transfers to poisoned lookalike addresses.
+- Alerts explain what happened, what the agent did, and your next move.
+- Monitoring and alerts only: Bodyguard cannot move or freeze your funds itself and never holds keys.
+
+## If you were just scammed
+Stop contact with the scammer, never pay anyone offering to "recover" funds (that is a second scam), report to the police (US: ic3.gov; England, Wales and Northern Ireland: reportfraud.police.uk), contact SEAL 911 (https://t.me/seal_911_bot), and use Freeze Desk to send freeze requests quickly. See https://guardagent.tech/help#urgent
+
+## Pages
+- [Home](https://guardagent.tech/): product, ranks, services, $GUARD token, FAQ
+- [Help & support](https://guardagent.tech/help): answers and a support ticket form

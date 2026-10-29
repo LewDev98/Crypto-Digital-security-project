@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Bodyguard Shield</title>
+<style>
+:root{--bg:#0b0d09;--s:#121510;--l:#373f2b;--fg:#e3ebe5;--m:#8c998f;--g:#c8ff1a;--r:#ff5a6b}
+body{margin:0;width:320px;background:var(--bg);color:var(--fg);font:14px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{padding:16px;display:grid;gap:12px}.top{display:flex;align-items:center;gap:10px;font-weight:700;font-size:16px}
+.k{font:600 10.5px ui-monospace,Menlo,monospace;letter-spacing:.14em;text-transform:uppercase;color:var(--m)}
+.card{background:var(--s);border:1px solid var(--l);border-radius:12px;padding:12px;display:grid;gap:8px}
+input{width:100%;box-sizing:border-box;background:var(--bg);color:var(--fg);border:1px solid var(--l);border-radius:8px;padding:9px;font:13px ui-monospace,monospace}
+input:focus{outline:none;border-color:var(--g)}button{all:unset;cursor:pointer;text-align:center;padding:10px;border-radius:9px;font-weight:600}
+.p{background:var(--g);color:#121a00}.gh{border:1px solid var(--l);color:var(--fg)}.err{color:var(--r);font-size:13px}.ok{color:var(--g)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;text-align:center}.stats b{display:block;font:600 18px ui-monospace,monospace}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--g);display:inline-block;margin-right:6px}.off .dot{background:var(--m)}
+label.sw{display:flex;justify-content:space-between;align-items:center}
+</style></head>
+<body><main>
+  <div class="top"><img src="icons/48.png" width="28" height="28" alt="">Bodyguard Shield</div>
+  <section id="pair" hidden>
+    <div class="card">
+      <span class="k">Pair with your agent</span>
+      <p style="margin:0;color:var(--m);font-size:13px">In your Bodyguard dashboard, open Extension and press "Get pairing code".</p>
+      <label class="k" for="backend">Bodyguard address</label><input id="backend" placeholder="https://guardagent.tech" value="https://guardagent.tech">
+      <label class="k" for="code">Pairing code</label><input id="code" inputmode="numeric" maxlength="8" placeholder="12345678">
+      <button class="p" id="go">Pair</button><div class="err" id="perr" role="status"></div>
+    </div>
+  </section>
+  <section id="on" hidden>
+    <div class="card" id="statusCard">
+      <span class="k">Agent</span><div><span class="dot"></span><b id="agent">G-0000</b> · <span id="rank"></span></div>
+      <label class="sw" for="enabled"><span>Protection</span><input type="checkbox" id="enabled" style="width:auto"></label>
+    </div>
+    <div class="card"><span class="k">This browser</span><div class="stats"><div><b id="checked">0</b><span class="k">Checked</span></div><div><b id="warned">0</b><span class="k">Warned</span></div><div><b id="blocked" style="color:var(--r)">0</b><span class="k">Blocked</span></div></div></div>
+    <button class="gh" id="unpair">Unpair</button><div class="err" id="oerr" role="status"></div>
+  </section>
+</main><script src="popup.js"></script></body></html>

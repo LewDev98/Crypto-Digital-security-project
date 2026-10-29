@@ -1,0 +1,44 @@
+# Bodyguard Agents · https://guardagent.tech
+# Public pages are open to every search engine and AI assistant. Private, signed-in and API routes are not.
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /app
+Disallow: /vault
+Disallow: /d/
+Disallow: /learn/
+Disallow: /duress/
+Disallow: /hooks/
+
+# AI search and answer engines are welcome to read and cite the public site.
+User-agent: GPTBot
+Allow: /
+Disallow: /api/
+Disallow: /app
+Disallow: /vault
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /api/
+Disallow: /app
+Disallow: /vault
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://guardagent.tech/sitemap.xml

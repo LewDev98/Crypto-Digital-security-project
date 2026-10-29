@@ -1,0 +1,22 @@
+{
+  "_readme": "Freeze Desk directory. 'url' is the official help or report page the victim is sent to. Fill 'email' ONLY with an address you have confirmed on the organisation's own website or by talking to them: when 'email' is set, Freeze Desk emails freeze requests there automatically (from FREEZE_FROM_EMAIL, with the victim as reply-to). 'addresses' lists known deposit or hot-wallet addresses per chain; when traced funds land on one, that target is flagged automatically. Never add phone numbers: fake 'support numbers' are a common scam. Admins can also edit this through POST /api/admin/freeze-directory.",
+  "targets": [
+    { "id": "seal911", "name": "SEAL 911 (Security Alliance)", "kind": "responder", "email": "sos@securityalliance.org", "url": "https://t.me/seal_911_bot", "note": "Volunteer white-hat emergency team for active crypto thefts. Free. Never asks for seed phrases or payment.", "addresses": {} },
+    { "id": "ic3", "name": "FBI IC3 (United States)", "kind": "police", "email": "", "url": "https://www.ic3.gov", "note": "File an official report. Exchanges and stablecoin issuers act faster with a police reference number.", "addresses": {} },
+    { "id": "reportfraud_uk", "name": "Report Fraud (England, Wales, Northern Ireland)", "kind": "police", "email": "", "url": "https://www.reportfraud.police.uk", "note": "Replaced Action Fraud in 2026. In Scotland, call Police Scotland on 101.", "addresses": {} },
+    { "id": "tether", "name": "Tether (USDT issuer)", "kind": "issuer", "email": "", "url": "https://tether.to", "note": "Can freeze USDT at the token level. Acts on law-enforcement requests, so file a police report first and pass on the reference.", "addresses": {} },
+    { "id": "circle", "name": "Circle (USDC issuer)", "kind": "issuer", "email": "", "url": "https://www.circle.com", "note": "Can freeze USDC at the token level on law-enforcement request.", "addresses": {} },
+    { "id": "binance", "name": "Binance", "kind": "exchange", "email": "", "url": "https://www.binance.com/en/support", "note": "Open a support chat and choose the option to report stolen funds.", "addresses": {} },
+    { "id": "coinbase", "name": "Coinbase", "kind": "exchange", "email": "", "url": "https://help.coinbase.com", "addresses": {} },
+    { "id": "kraken", "name": "Kraken", "kind": "exchange", "email": "", "url": "https://support.kraken.com", "addresses": {} },
+    { "id": "okx", "name": "OKX", "kind": "exchange", "email": "", "url": "https://www.okx.com/help", "addresses": {} },
+    { "id": "bybit", "name": "Bybit", "kind": "exchange", "email": "", "url": "https://www.bybit.com/en/help-center", "addresses": {} },
+    { "id": "kucoin", "name": "KuCoin", "kind": "exchange", "email": "", "url": "https://www.kucoin.com/support", "addresses": {} },
+    { "id": "bitget", "name": "Bitget", "kind": "exchange", "email": "", "url": "https://www.bitget.com/support", "addresses": {} },
+    { "id": "cryptocom", "name": "Crypto.com", "kind": "exchange", "email": "", "url": "https://help.crypto.com", "addresses": {} },
+    { "id": "gemini", "name": "Gemini", "kind": "exchange", "email": "", "url": "https://support.gemini.com", "addresses": {} },
+    { "id": "mexc", "name": "MEXC", "kind": "exchange", "email": "", "url": "https://www.mexc.com/support", "addresses": {} },
+    { "id": "htx", "name": "HTX", "kind": "exchange", "email": "", "url": "https://www.htx.com/support", "addresses": {} },
+    { "id": "bitstamp", "name": "Bitstamp", "kind": "exchange", "email": "", "url": "https://www.bitstamp.net", "addresses": {} }
+  ]
+}

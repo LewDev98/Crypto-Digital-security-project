@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0e1013">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Vault">
+<title>Vault</title>
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<style>
+/* Deliberately plain: under duress this has to look like any wallet vault, with nothing that hints at an alarm. */
+:root{color-scheme:dark;--bg:#0e1013;--s:#16191e;--line:#262a31;--fg:#eef0f3;--m:#8b919c;--acc:#7aa2ff}
+*{box-sizing:border-box}html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--fg);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased;
+  padding:env(safe-area-inset-top,0) env(safe-area-inset-right,0) env(safe-area-inset-bottom,0) env(safe-area-inset-left,0)}
+main{max-width:420px;margin:0 auto;padding:40px 20px;min-height:100%;display:flex;flex-direction:column}
+.top{display:flex;align-items:center;gap:10px;color:var(--m);font-size:14px}
+.top svg{width:22px;height:22px}
+h1{font-size:22px;font-weight:600;margin:28px 0 6px;text-align:center}
+.sub{color:var(--m);text-align:center;margin:0 0 22px;font-size:14px;min-height:21px}
+.dots{display:flex;justify-content:center;gap:14px;margin-bottom:30px}
+.dots i{width:13px;height:13px;border-radius:50%;border:1.5px solid var(--m)}
+.dots i.on{background:var(--fg);border-color:var(--fg)}
+.dots.shake{animation:sh .35s}@keyframes sh{20%,60%{transform:translateX(-8px)}40%,80%{transform:translateX(8px)}}
+.pad{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:300px;margin:0 auto}
+.pad button{all:unset;cursor:pointer;height:68px;border-radius:50%;background:var(--s);display:grid;place-items:center;font-size:26px;font-weight:500;-webkit-tap-highlight-color:transparent}
+.pad button:active{background:#22262d}.pad button.ghost{background:none;font-size:15px;color:var(--m)}
+.pad button:focus-visible{outline:2px solid var(--acc)}
+.total{text-align:center;margin:26px 0 20px}.total small{color:var(--m);font-size:13px}.total b{display:block;font-size:30px;font-weight:600;margin-top:4px}
+.list{background:var(--s);border-radius:16px;overflow:hidden}
+.w{display:flex;align-items:center;gap:12px;padding:14px 16px}.w+.w{border-top:1px solid var(--line)}
+.w .ic{width:36px;height:36px;border-radius:50%;background:#232833;display:grid;place-items:center;font-size:12px;font-weight:700;color:var(--acc)}
+.w .t{flex:1;min-width:0}.w .t b{display:block;font-weight:500}.w .t small{color:var(--m);font-size:12.5px;font-family:ui-monospace,Menlo,monospace}
+.w .v{text-align:right;font-variant-numeric:tabular-nums;font-weight:500}
+.lock{all:unset;cursor:pointer;margin:24px auto 0;color:var(--m);font-size:14px;padding:10px 16px;border-radius:10px}
+.msg{text-align:center;color:var(--m);margin-top:40px}.msg a{color:var(--acc)}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main>
+  <div class="top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Vault</div>
+
+  <section id="lockView">
+    <h1>Enter PIN</h1>
+    <p class="sub" id="sub" role="status"></p>
+    <div class="dots" id="dots" aria-hidden="true"></div>
+    <div class="pad" id="pad" aria-label="PIN keypad"></div>
+  </section>
+
+  <section id="openView" hidden>
+    <div class="total"><small>Your wallets</small><b id="count"></b></div>
+    <div class="list" id="list"></div>
+    <button class="lock" id="lockBtn" type="button">Lock</button>
+  </section>
+
+  <section id="signedOut" class="msg" hidden>
+    <p>This device isn't signed in.</p>
+    <p><a href="/app">Sign in</a></p>
+  </section>
+</main>
+<script src="/vault.js"></script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+{
+  "_readme": "Your own threat list, merged with the public lists the server downloads daily. Add drainer programs, scam addresses and phishing domains here, or POST them to /api/admin/lists.",
+  "solana": { "programs": [], "addresses": [] },
+  "evm": { "addresses": [] },
+  "domains": []
+}

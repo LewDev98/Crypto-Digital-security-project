@@ -1,0 +1,14 @@
+{
+  "name": "Bodyguard Agents",
+  "short_name": "Bodyguard",
+  "description": "AI security agents for your crypto wallets, inbox and domains.",
+  "start_url": "/app",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b0d09",
+  "theme_color": "#0b0d09",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
